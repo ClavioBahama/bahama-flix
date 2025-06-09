@@ -78,6 +78,23 @@ export const allContent: ContentItem[] = [
     cast: ["Matt Damon", "Christian Bale", "Jon Bernthal"],
     watchUrl: "https://drive.google.com/file/d/1ghi789/view", // Substitua pelo link real
   },
+    {
+    id: 3,
+    title: "Fiesa",
+    type: "movie",
+    genre: "Ação",
+    year: 2019,
+    rating: 4.0,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "A rivalidade épica entre duas montadoras nas corridas de Le Mans.",
+    slug: "ford-vs-ferrari",
+    duration: "152 min",
+    director: "James Mangold",
+    cast: ["Matt Damon", "Christian Bale", "Jon Bernthal"],
+    watchUrl: "https://drive.google.com/file/d/1ghi789/view", // Substitua pelo link real
+  },
+
+
   {
     id: 4,
     title: "As Branquelas",
