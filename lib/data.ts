@@ -33,6 +33,21 @@ export const allContent: ContentItem[] = [
     cast: ["Craig T. Nelson", "Holly Hunter", "Sarah Vowell"],
     watchUrl: "https://drive.google.com/file/d/1abc123/view", // Substitua pelo link real
   },
+    {
+    id: 1,
+    title: "Bahama",
+    type: "movie",
+    genre: "Animação",
+    year: 2004,
+    rating: 4.0,
+    image: "https://bahamaflix.netlify.app/Filmes/Homem%20Aranha.jpg",
+    description: "Uma família de super-heróis deve trabalhar juntos para salvar o mundo de um vilão perigoso.",
+    slug: "os-incriveis",
+    duration: "115 min",
+    director: "Brad Bird",
+    cast: ["Craig T. Nelson", "Holly Hunter", "Sarah Vowell"],
+    watchUrl: "https://drive.google.com/file/d/1abc123/view", // Substitua pelo link real
+  },
   {
     id: 2,
     title: "Arraste-me para o Inferno",
