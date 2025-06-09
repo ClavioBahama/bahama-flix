@@ -1,19 +1,19 @@
 export interface ContentItem {
-  id: number
-  title: string
-  type: "movie" | "series"
-  genre: string
-  year: number
-  rating: number
-  image: string
-  description: string
-  slug: string
-  seasons?: number
-  duration?: string
-  director?: string
-  cast?: string[]
-  trailer?: string
-  watchUrl: string // Adicionar esta linha
+  id: 0,
+  title: "Clayne",
+  type: "series"
+  genre: "Drama"
+  year: 2005,
+  rating: 5.0,
+  image: "https://bubababy.com.br/wp-content/uploads/2022/08/com-quantos-meses-o-bebe-comeca-a-engatinhar-buba-produtos-para-bebes.png",
+  description: "filha de clavio", 
+  slug: "Bebe",
+  seasons?: 1,
+  duration?: "160",
+  director?: "Clavio",
+  cast?: ["bahama"],
+  trailer?: "no",
+  watchUrl: "https://bubababy.com.br/wp-content/uploads/2022/08/com-quantos-meses-o-bebe-comeca-a-engatinhar-buba-produtos-para-bebes.png", // Adicionar esta linha
 }
 
 export const allContent: ContentItem[] = [
