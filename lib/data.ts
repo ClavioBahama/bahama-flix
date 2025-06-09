@@ -48,6 +48,21 @@ export const allContent: ContentItem[] = [
     cast: ["Craig T. Nelson", "Holly Hunter", "Sarah Vowell"],
     watchUrl: "https://drive.google.com/file/d/1abc123/view", // Substitua pelo link real
   },
+    {
+    id: 5,
+    title: "Gina",
+    type: "movie",
+    genre: "Drama",
+    year: 1997,
+    rating: 4.0,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Uma história de amor épica a bordo do navio mais famoso da história.",
+    slug: "titanic",
+    duration: "194 min",
+    director: "James Cameron",
+    cast: ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"],
+    watchUrl: "https://drive.google.com/file/d/1mno345/view", // Substitua pelo link real
+  },
   {
     id: 2,
     title: "Arraste-me para o Inferno",
