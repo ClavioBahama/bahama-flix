@@ -1,0 +1,315 @@
+export interface ContentItem {
+  id: number
+  title: string
+  type: "movie" | "series"
+  genre: string
+  year: number
+  rating: number
+  image: string
+  description: string
+  slug: string
+  seasons?: number
+  duration?: string
+  director?: string
+  cast?: string[]
+  trailer?: string
+  watchUrl: string // Adicionar esta linha
+}
+
+export const allContent: ContentItem[] = [
+  // Filmes
+  {
+    id: 1,
+    title: "Os Incríveis",
+    type: "movie",
+    genre: "Animação",
+    year: 2004,
+    rating: 4.0,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Uma família de super-heróis deve trabalhar juntos para salvar o mundo de um vilão perigoso.",
+    slug: "os-incriveis",
+    duration: "115 min",
+    director: "Brad Bird",
+    cast: ["Craig T. Nelson", "Holly Hunter", "Sarah Vowell"],
+    watchUrl: "https://drive.google.com/file/d/1abc123/view", // Substitua pelo link real
+  },
+  {
+    id: 2,
+    title: "Arraste-me para o Inferno",
+    type: "movie",
+    genre: "Terror",
+    year: 2009,
+    rating: 4.0,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Uma jovem luta contra uma maldição sobrenatural que a condena ao inferno.",
+    slug: "arraste-me-para-o-inferno",
+    duration: "99 min",
+    director: "Sam Raimi",
+    cast: ["Alison Lohman", "Justin Long", "Lorna Raver"],
+    watchUrl: "https://drive.google.com/file/d/1def456/view", // Substitua pelo link real
+  },
+  {
+    id: 3,
+    title: "Ford vs Ferrari",
+    type: "movie",
+    genre: "Ação",
+    year: 2019,
+    rating: 4.0,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "A rivalidade épica entre duas montadoras nas corridas de Le Mans.",
+    slug: "ford-vs-ferrari",
+    duration: "152 min",
+    director: "James Mangold",
+    cast: ["Matt Damon", "Christian Bale", "Jon Bernthal"],
+    watchUrl: "https://drive.google.com/file/d/1ghi789/view", // Substitua pelo link real
+  },
+  {
+    id: 4,
+    title: "As Branquelas",
+    type: "movie",
+    genre: "Comédia",
+    year: 2004,
+    rating: 4.0,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Dois agentes do FBI se disfarçam de mulheres ricas para protegê-las.",
+    slug: "as-branquelas",
+    duration: "109 min",
+    director: "Keenen Ivory Wayans",
+    cast: ["Shawn Wayans", "Marlon Wayans", "Kerry Washington"],
+    watchUrl: "https://drive.google.com/file/d/1jkl012/view", // Substitua pelo link real
+  },
+  {
+    id: 5,
+    title: "Titanic",
+    type: "movie",
+    genre: "Drama",
+    year: 1997,
+    rating: 4.0,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Uma história de amor épica a bordo do navio mais famoso da história.",
+    slug: "titanic",
+    duration: "194 min",
+    director: "James Cameron",
+    cast: ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"],
+    watchUrl: "https://drive.google.com/file/d/1mno345/view", // Substitua pelo link real
+  },
+  {
+    id: 6,
+    title: "A Noiva Cadáver",
+    type: "movie",
+    genre: "Animação",
+    year: 2005,
+    rating: 4.0,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Um jovem acidentalmente se casa com uma noiva morta em uma floresta sombria.",
+    slug: "a-noiva-cadaver",
+    duration: "77 min",
+    director: "Tim Burton",
+    cast: ["Johnny Depp", "Helena Bonham Carter", "Emily Watson"],
+    watchUrl: "https://drive.google.com/file/d/1pqr678/view", // Substitua pelo link real
+  },
+  {
+    id: 7,
+    title: "Tráfico de Mulheres",
+    type: "movie",
+    genre: "Drama",
+    year: 2020,
+    rating: 4.0,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Drama intenso sobre tráfico humano e a luta por justiça.",
+    slug: "trafico-de-mulheres",
+    duration: "112 min",
+    director: "Diretor Exemplo",
+    cast: ["Atriz 1", "Ator 2", "Atriz 3"],
+    watchUrl: "https://drive.google.com/file/d/1stu901/view", // Substitua pelo link real
+  },
+  {
+    id: 8,
+    title: "Ben 10 Contra o Universo",
+    type: "movie",
+    genre: "Animação",
+    year: 2020,
+    rating: 4.0,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Ben enfrenta sua maior aventura intergaláctica para salvar o universo.",
+    slug: "ben-10-contra-o-universo",
+    duration: "72 min",
+    director: "Henrique Jardim",
+    cast: ["Tara Strong", "Montse Hernandez", "David Kaye"],
+    watchUrl: "https://drive.google.com/file/d/1vwx234/view", // Substitua pelo link real
+  },
+  {
+    id: 9,
+    title: "Grito Silencioso",
+    type: "movie",
+    genre: "Drama",
+    year: 2023,
+    rating: 4.0,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Um drama emocionante sobre superação e coragem.",
+    slug: "grito-silencioso",
+    duration: "98 min",
+    director: "Diretor Exemplo",
+    cast: ["Ator 1", "Atriz 2", "Ator 3"],
+    watchUrl: "https://drive.google.com/file/d/1yza567/view", // Substitua pelo link real
+  },
+  {
+    id: 10,
+    title: "Uma Noite de Crime",
+    type: "movie",
+    genre: "Terror",
+    year: 2013,
+    rating: 4.0,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Uma noite onde todos os crimes são permitidos por 12 horas.",
+    slug: "uma-noite-de-crime",
+    duration: "85 min",
+    director: "James DeMonaco",
+    cast: ["Ethan Hawke", "Lena Headey", "Max Burkholder"],
+    watchUrl: "https://drive.google.com/file/d/1bcd890/view", // Substitua pelo link real
+  },
+  {
+    id: 11,
+    title: "A Pequena Sereia",
+    type: "movie",
+    genre: "Animação",
+    year: 1989,
+    rating: 4.0,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "A história da sereia que sonhava em viver na terra.",
+    slug: "a-pequena-sereia",
+    duration: "83 min",
+    director: "Ron Clements",
+    cast: ["Jodi Benson", "Samuel E. Wright", "Pat Carroll"],
+    watchUrl: "https://drive.google.com/file/d/1efg123/view", // Substitua pelo link real
+  },
+  {
+    id: 12,
+    title: "Sobrenatural: A Origem",
+    type: "movie",
+    genre: "Terror",
+    year: 2014,
+    rating: 4.0,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "As origens dos fenômenos sobrenaturais que assombram uma família.",
+    slug: "sobrenatural-a-origem",
+    duration: "98 min",
+    director: "Leigh Whannell",
+    cast: ["Dermot Mulroney", "Stefanie Scott", "Angus Sampson"],
+    watchUrl: "https://drive.google.com/file/d/1hij456/view", // Substitua pelo link real
+  },
+
+  // Séries
+  {
+    id: 13,
+    title: "Malcolm in the Middle",
+    type: "series",
+    genre: "Comédia",
+    year: 2000,
+    rating: 4.0,
+    seasons: 7,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "As aventuras de uma família disfuncional vista através dos olhos do filho do meio.",
+    slug: "malcolm-in-the-middle",
+    cast: ["Frankie Muniz", "Bryan Cranston", "Jane Kaczmarek"],
+    watchUrl: "https://drive.google.com/drive/folders/1klm789", // Substitua pelo link real
+  },
+  {
+    id: 14,
+    title: "Naruto",
+    type: "series",
+    genre: "Animação",
+    year: 2002,
+    rating: 4.0,
+    seasons: 1,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "A jornada de um jovem ninja em busca de reconhecimento e do sonho de se tornar Hokage.",
+    slug: "naruto",
+    cast: ["Junko Takeuchi", "Noriaki Sugiyama", "Chie Nakamura"],
+    watchUrl: "https://drive.google.com/drive/folders/1nop012", // Substitua pelo link real
+  },
+  {
+    id: 15,
+    title: "Luna Negra",
+    type: "series",
+    genre: "Drama",
+    year: 2020,
+    rating: 4.0,
+    seasons: 1,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Mistério e drama em uma série envolvente sobre segredos familiares.",
+    slug: "luna-negra",
+    cast: ["Ator 1", "Atriz 2", "Ator 3"],
+    watchUrl: "https://drive.google.com/drive/folders/1qrs345", // Substitua pelo link real
+  },
+  {
+    id: 16,
+    title: "Não Fale com Estranhos",
+    type: "series",
+    genre: "Suspense",
+    year: 2021,
+    rating: 4.0,
+    seasons: 1,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Thriller psicológico sobre segredos familiares e as consequências de mentiras.",
+    slug: "nao-fale-com-estranhos",
+    cast: ["Richard Armitage", "Siobhan Finneran", "Jennifer Saunders"],
+    watchUrl: "https://drive.google.com/drive/folders/1tuv678", // Substitua pelo link real
+  },
+  {
+    id: 17,
+    title: "Prisão de Mulheres",
+    type: "series",
+    genre: "Drama",
+    year: 2022,
+    rating: 4.0,
+    seasons: 1,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Drama carcerário feminino que explora as vidas das detentas.",
+    slug: "prisao-de-mulheres",
+    cast: ["Atriz 1", "Atriz 2", "Atriz 3"],
+    watchUrl: "https://drive.google.com/drive/folders/1wxy901", // Substitua pelo link real
+  },
+  {
+    id: 18,
+    title: "You",
+    type: "series",
+    genre: "Thriller",
+    year: 2018,
+    rating: 4.0,
+    seasons: 4,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Obsessão e stalking no mundo digital moderno.",
+    slug: "you",
+    cast: ["Penn Badgley", "Elizabeth Lail", "Luca Padovan"],
+    watchUrl: "https://drive.google.com/drive/folders/1zab234", // Substitua pelo link real
+  },
+  {
+    id: 19,
+    title: "The Walking Dead",
+    type: "series",
+    genre: "Terror",
+    year: 2010,
+    rating: 4.0,
+    seasons: 11,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Sobrevivência em um mundo pós-apocalíptico dominado por zumbis.",
+    slug: "the-walking-dead",
+    cast: ["Andrew Lincoln", "Norman Reedus", "Lauren Cohan"],
+    watchUrl: "https://drive.google.com/drive/folders/1cde567", // Substitua pelo link real
+  },
+  {
+    id: 20,
+    title: "Brooklyn Nine-Nine",
+    type: "series",
+    genre: "Comédia",
+    year: 2013,
+    rating: 4.1,
+    seasons: 8,
+    image: "/placeholder.svg?height=400&width=300",
+    description: "Comédia policial ambientada em uma delegacia de Nova York.",
+    slug: "brooklyn-nine-nine",
+    cast: ["Andy Samberg", "Stephanie Beatriz", "Terry Crews"],
+    watchUrl: "https://drive.google.com/drive/folders/1fgh890", // Substitua pelo link real
+  },
+]
