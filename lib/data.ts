@@ -126,6 +126,23 @@ export const allContent: ContentItem[] = [
     watchUrl: "https://drive.google.com/file/d/1mno345/view", // Substitua pelo link real
   },
   {
+  id: 0,
+  title: "Clayne",
+  type: "series"
+  genre: "Drama"
+  year: 2005,
+  rating: 5.0,
+  image: "https://bubababy.com.br/wp-content/uploads/2022/08/com-quantos-meses-o-bebe-comeca-a-engatinhar-buba-produtos-para-bebes.png",
+  description: "filha de clavio", 
+  slug: "Bebe",
+  seasons?: 1,
+  duration?: "160",
+  director?: "Clavio",
+  cast?: ["bahama"],
+  trailer?: "no",
+  watchUrl: "https://bubababy.com.br/wp-content/uploads/2022/08/com-quantos-meses-o-bebe-comeca-a-engatinhar-buba-produtos-para-bebes.png", // Adicionar esta linha
+}
+  {
     id: 6,
     title: "A Noiva Cadáver",
     type: "movie",
